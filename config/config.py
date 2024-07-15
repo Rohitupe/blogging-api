@@ -15,6 +15,7 @@ client = MongoClient(uri, server_api=ServerApi('1'))
 # Create Database & collections
 db_name = client.BlogApp
 blog_collections = db_name["blogsPost"]
+blog_collections_users_details = db_name["users_information"]
 
 # Send a ping to confirm a successful connection
 try:

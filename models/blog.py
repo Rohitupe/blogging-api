@@ -7,4 +7,13 @@ class BlogModel(BaseModel):
     content : str
     author : str
     tags : list
-    rating : Optional[int] = None
+    rating : Optional[float] = None
+
+
+class UpdateBlogModel(BaseModel):
+    title : str = None
+    sub_title : str = None
+    content : str = None
+    author : str = None
+    tags : list = None
+    rating : Optional[float] = None
